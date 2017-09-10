@@ -1,3 +1,5 @@
+require('./style.css')
+
 var component = require('./hello');
 var app = document.createElement('div');
 

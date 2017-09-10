@@ -15,6 +15,19 @@ const common = {
   output: {
     path: PATHS.build,
     filename: 'bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        loaders: [
+          'style-loader', {
+            loader: 'css-loader',
+          }
+        ],
+        include: PATHS.application
+      }
+    ]
   }
 };
 
